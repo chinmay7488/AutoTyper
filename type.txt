@@ -1,0 +1,11 @@
+ static void Main() {
+      
+     MilkDetails m=new MilkDetails();
+     Console.WriteLine("Enter milk brand");
+     m.MilkBrand=Console.ReadLine();
+     Console.WriteLine("Enter purchase type");
+     m.PurchaseType=Console.ReadLine();
+     MilkDetails s=m.CalculateCost(m);
+     Console.WriteLine("Cost : {0}",s.Price);
+  }
+}
